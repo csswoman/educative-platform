@@ -1,0 +1,29 @@
+{
+  "name": "educative",
+  "version": "1.0.0",
+  "description": "Página de plataforma online con carrito de compras",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csswoman/educative-platform.git"
+  },
+  "author": "Karla Agraz <karla.agraz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/csswoman/educative-platform/issues"
+  },
+  "homepage": "https://github.com/csswoman/educative-platform#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "gulp-rename": "^2.0.0",
+    "node-sass": "^5.0.0"
+  }
+}
