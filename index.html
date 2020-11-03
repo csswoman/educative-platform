@@ -9,8 +9,41 @@
 </head>
 
 <body>
-<div class="text">
-    Hola mundo
+<header class="header contenedor" id="header">
+    <div class="logo">
+        <img src="img/logo.jpg" alt="Logo">
+    </div>
+    <div class="carrito-compras">
+        <img src="img/cart.png" class="img-carrito" alt="carrito">
+        <div class="contenido oculto">
+            <table id="lista-carrito">
+                <thead>
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="img/curso1.jpg" alt="curso">
+                        </td>
+                        <td>Curso de CSS Grid</td>
+                        <td>$12</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="#" class="boton">Vaciar carrito</a>
+        </div>
+    </div>
+</header>
+
+<div class="hero">
+    <div class="contenido-hero contenedor">
+        <h2>Aprende algo nuevo</h2>
+        <p>Todos los cursos a 12$</p>
+    </div>
 </div>
 </body>
 
