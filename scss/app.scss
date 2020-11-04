@@ -20,6 +20,10 @@ body {
     margin: 0 auto;
 }
 
+.centrado {
+    text-align: center;
+}
+
 .oculto {
     display: none;
 }
@@ -50,6 +54,102 @@ body {
 
         .boton {
             @include boton($primary-color);
+        }
+    }
+}
+
+.hero {
+    @include background-imagen('../img/hero.jpg');
+    min-height: 24rem;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+
+    .contenido-hero {
+        flex: 1;
+
+        h2 {
+            font-weight: 400;
+            font-size: 2.4rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        form {
+            position: relative;
+            
+            @include tablet() {
+                width: 40%;
+            }
+
+            input[type="submit"] {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 3rem;
+                height: 3rem;
+                display: block;
+                text-indent: -9999px;
+                border: none;
+                cursor: pointer;
+                background-color: #fff;
+                @include background-imagen('../img/lupa.png');
+            }
+
+            input[type="text"] {
+                width: 100%;
+                height: 3rem;
+                border: none;
+            }
+        }
+    }
+}
+
+.barra {
+    min-height: 6rem;
+    padding: 1rem;
+    @include gradient($tertiary-color, $secondary-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+
+    .iconos {
+        display: flex;
+        flex: 1;
+        padding: 1.4rem 0;
+        flex-direction: column;
+
+        @include desktop() {
+            flex-direction: row;
+        }
+
+        .icono {
+            flex: 1;
+            text-align: center;
+            background-size: 2.4rem;
+            background-position: 5% center!important;
+            @include tablet {
+                background-position: 25% center !important;
+            }
+
+            @include desktop {
+                background-position: left center !important;
+            }
+            background-size: 2.4rem;
+            text-align: center;
+
+            &.icono1 {
+                @include background-imagen('../img/icono1.png');
+            }
+            &.icono2 {
+                @include background-imagen('../img/icono2.png');
+            }
+            &.icono3 {
+                @include background-imagen('../img/icono3.png');
+            }
         }
     }
 }
