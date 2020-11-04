@@ -39,7 +39,7 @@ body {
       max-width: 150px; }
     .carrito-compras:hover .contenido .boton {
       background-color: #0f7c90;
-      padding: .5rem 1rem;
+      padding: .8rem 1rem;
       margin-top: 1rem;
       display: block;
       text-align: center;
@@ -127,3 +127,46 @@ body {
         background-image: url("../img/icono3.png");
         background-repeat: no-repeat;
         background-position: center; }
+
+.cursos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .cursos .curso {
+    flex: 0 1 calc(100% - 1rem);
+    border: 1px solid #73726c;
+    margin-bottom: 1rem; }
+    .cursos .curso .imagen-curso {
+      width: 100%; }
+    @media only screen and (min-width: 430px) {
+      .cursos .curso {
+        flex: 0 1 calc(50% - 1rem); } }
+    @media only screen and (min-width: 768px) {
+      .cursos .curso {
+        flex: 0 1 calc(33% - 1rem); } }
+    @media only screen and (min-width: 1024px) {
+      .cursos .curso {
+        flex: 0 1 calc(25% - 1rem); } }
+    .cursos .curso .info-curso {
+      padding: 1rem; }
+      .cursos .curso .info-curso h4 {
+        margin: 0;
+        font-size: 1.2rem; }
+      .cursos .curso .info-curso .precio {
+        display: flex;
+        justify-content: space-between; }
+        .cursos .curso .info-curso .precio .regular {
+          text-decoration: line-through; }
+        .cursos .curso .info-curso .precio .oferta {
+          font-size: 1.6rem;
+          font-weight: 700;
+          color: #003640; }
+      .cursos .curso .info-curso .boton {
+        background-color: #0f7c90;
+        padding: .8rem 1rem;
+        margin-top: 1rem;
+        display: block;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase; }

@@ -153,3 +153,56 @@ body {
         }
     }
 }
+
+.cursos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .curso {
+        .imagen-curso {
+            width: 100%;
+        }
+        flex: 0 1 calc(100% - 1rem);
+        border: 1px solid $light-text;
+        margin-bottom: 1rem;
+
+        @include phone() {
+            flex: 0 1 calc(50% - 1rem);
+        }
+
+        @include tablet() {
+            flex: 0 1 calc(33% - 1rem);
+        }
+
+        @include desktop() {
+            flex: 0 1 calc(25% - 1rem);
+        }
+
+        .info-curso {
+            padding: 1rem;
+
+            h4 {
+                margin: 0;
+                font-size: 1.2rem;
+            }
+
+            .precio {
+                display: flex;
+                justify-content: space-between;
+                .regular {
+                    text-decoration: line-through;
+                }
+                .oferta {
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    color: $background-secondary;
+                }
+            }
+
+            .boton {
+                @include boton($primary-color);
+            }
+        }
+    }
+}
