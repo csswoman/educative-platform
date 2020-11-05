@@ -34,12 +34,14 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 0 10px 0 10px;
+
+    @include phone() {
+        margin: 0 40px 0 40px;
+    }
 
     @include desktop() {
         margin: auto;
-        
     }
 
     .logo {
@@ -110,7 +112,7 @@ h1 {
         flex: 1;
         text-align: center;
         @include desktop() {
-            margin: 50px ;
+            margin: 100px ;
         }
 
         h2 {
@@ -291,6 +293,7 @@ h1 {
 
     .contenedor-footer {
         display: flex;
+        padding: 0 24px 0 24px;
         flex-direction: column;
         @include phone() {
             flex-direction: row;

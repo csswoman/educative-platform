@@ -27,8 +27,10 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 40px;
-  margin-right: 40px; }
+  margin: 0 10px 0 10px; }
+  @media only screen and (min-width: 430px) {
+    .header {
+      margin: 0 40px 0 40px; } }
   @media only screen and (min-width: 1024px) {
     .header {
       margin: auto; } }
@@ -94,7 +96,7 @@ h1 {
     text-align: center; }
     @media only screen and (min-width: 1024px) {
       .hero .contenido-hero {
-        margin: 50px; } }
+        margin: 100px; } }
     .hero .contenido-hero h2 {
       font-weight: 400;
       font-size: 2.4rem; }
@@ -238,6 +240,7 @@ h1 {
   padding-top: 2rem; }
   .footer .contenedor-footer {
     display: flex;
+    padding: 0 24px 0 24px;
     flex-direction: column; }
     @media only screen and (min-width: 430px) {
       .footer .contenedor-footer {

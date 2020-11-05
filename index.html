@@ -14,9 +14,10 @@
         <div class="logo">
             <img src="img/logo.jpg" alt="Logo">
         </div>
+
         <div class="carrito-compras">
             <img src="img/cart.png" id="img-carrito" class="img-carrito" alt="carrito">
-            <div class="carrito contenido oculto">
+            <div class="carrito contenido oculto" id="carrito">
 
                 <table id="lista-carrito">
                     <thead>
@@ -28,8 +29,7 @@
                         </tr>
                     </thead>
 
-                    <tbody>
-                    </tbody>
+                    <tbody></tbody>
                 </table>
 
                 <a href="#" id="vaciar-carrito" class="boton">Vaciar carrito</a>
@@ -68,8 +68,7 @@
 
     <main>
         <h1 class="encabezado centrado">Cursos En Línea</h1>
-
-        <div class="cursos contenedor">
+        <div class="cursos contenedor" id="lista-cursos">
             <div class="curso">
                 <img class="imagen-curso" src="img/curso5.jpg">
                 <div class="info-curso">
@@ -78,9 +77,9 @@
                     <img src="img/estrellas.png">
                     <div class="precio">
                         <p class="regular">$200</p>
-                        <p class="oferta">$15</p>
+                        <span class="oferta">$15</span>
                     </div>
-                    <a href="#" class="boton" data-id="5">Agregar Al Carrito</a>
+                    <a href="#" class="boton agregar-carrito" data-id="1">Agregar Al Carrito</a>
                 </div>
             </div>
             <!--.curso-->
@@ -92,9 +91,9 @@
                     <img src="img/estrellas.png">
                     <div class="precio">
                         <p class="regular">$200</p>
-                        <p class="oferta">$15</p>
+                        <span class="oferta">$15</span>
                     </div>
-                    <a href="#" class="boton" data-id="6">Agregar Al Carrito</a>
+                    <a href="#" class="boton agregar-carrito" data-id="2">Agregar Al Carrito</a>
                 </div>
             </div>
             <!--.card-->
@@ -106,9 +105,9 @@
                     <img src="img/estrellas.png">
                     <div class="precio">
                         <p class="regular">$200</p>
-                        <p class="oferta">$15</p>
+                        <span class="oferta">$15</span>
                     </div>
-                    <a href="#" class="boton" data-id="7">Agregar Al Carrito</a>
+                    <a href="#" class="boton agregar-carrito" data-id="3">Agregar Al Carrito</a>
                 </div>
             </div>
             <!--.curso-->
@@ -120,9 +119,9 @@
                     <img src="img/estrellas.png">
                     <div class="precio">
                         <p class="regular">$200</p>
-                        <p class="oferta">$15</p>
+                        <span class="oferta">$15</span>
                     </div>
-                    <a href="#" class="boton" data-id="8">Agregar Al Carrito</a>
+                    <a href="#" class="boton agregar-carrito" data-id="4">Agregar Al Carrito</a>
                 </div>
             </div>
             <!--.curso-->
@@ -134,9 +133,9 @@
                     <img src="img/estrellas.png">
                     <div class="precio">
                         <p class="regular">$200</p>
-                        <p class="oferta">$15</p>
+                        <span class="oferta">$15</span>
                     </div>
-                    <a href="#" class="boton" data-id="9">Agregar Al Carrito</a>
+                    <a href="#" class="boton agregar-carrito" data-id="5">Agregar Al Carrito</a>
                 </div>
             </div>
             <!--.curso-->
@@ -148,9 +147,9 @@
                     <img src="img/estrellas.png">
                     <div class="precio">
                         <p class="regular">$200</p>
-                        <p class="oferta">$15</p>
+                        <span class="oferta">$15</span>
                     </div>
-                    <a href="#" class="boton" data-id="10">Agregar Al Carrito</a>
+                    <a href="#" class="boton agregar-carrito" data-id="6">Agregar Al Carrito</a>
                 </div>
             </div>
             <!--.curso-->
@@ -162,9 +161,9 @@
                     <img src="img/estrellas.png">
                     <div class="precio">
                         <p class="regular">$200</p>
-                        <p class="oferta">$15</p>
+                        <span class="oferta">$15</span>
                     </div>
-                    <a href="#" class="boton" data-id="11">Agregar Al Carrito</a>
+                    <a href="#" class="boton agregar-carrito" data-id="7">Agregar Al Carrito</a>
                 </div>
             </div>
             <!--.curso-->
@@ -176,9 +175,9 @@
                     <img src="img/estrellas.png">
                     <div class="precio">
                         <p class="regular">$200</p>
-                        <p class="oferta">$15</p>
+                        <span class="oferta">$15</span>
                     </div>
-                    <a href="#" class="boton" data-id="12">Agregar Al Carrito</a>
+                    <a href="#" class="boton agregar-carrito" data-id="8">Agregar Al Carrito</a>
                 </div>
             </div>
             <!--.curso-->
@@ -206,6 +205,8 @@
         </div>
         <!--.contenedor-->
     </footer>
+
+    <script src="js/app.js"></script>
 </body>
 
 </html>
