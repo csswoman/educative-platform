@@ -75,14 +75,15 @@ h1 {
             max-width: 150px;
         }
 
-        table {
-            border-bottom: 1px solid $gray-bg;
-        }
-
         th {
             padding: 12px 15px;
             font-weight: 600;
-            
+            border-bottom: 1px solid $gray-bg;
+        }
+
+        td {
+            border-bottom: 1px solid $gray-bg;
+            padding: 10px;
         }
 
         .boton {

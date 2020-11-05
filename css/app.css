@@ -59,11 +59,13 @@ h1 {
     font-size: 15px; }
     .carrito-compras:hover .contenido img {
       max-width: 150px; }
-    .carrito-compras:hover .contenido table {
-      border-bottom: 1px solid #f2f2f2; }
     .carrito-compras:hover .contenido th {
       padding: 12px 15px;
-      font-weight: 600; }
+      font-weight: 600;
+      border-bottom: 1px solid #f2f2f2; }
+    .carrito-compras:hover .contenido td {
+      border-bottom: 1px solid #f2f2f2;
+      padding: 10px; }
     .carrito-compras:hover .contenido .boton {
       background-color: #f2f2f2;
       padding: .8rem 1rem;
